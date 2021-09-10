@@ -1,0 +1,31 @@
+<LANGUAGE>
+  <RESOURCES />
+  <CATEGORY Name="CustomStoryMain">
+    <Entry Name="Description">This mod is an enhancement to the original Madness Ch03 Demo mod by cc/machosalad[br][br]Features new maps, enemies, objects, music, bug fixes, grammar correction, and more. A list of new items and enemies can be found in this mod's features.txt file</Entry>
+  </CATEGORY>
+  <CATEGORY Name="Inventory">
+    <Entry Name="ItemName_CH3key">Your freedom</Entry>
+    <Entry Name="ItemDesc_CH3key">Heavier than you thought</Entry>
+    <Entry Name="ItemName_BONUSKEY">Bonus Key</Entry>
+    <Entry Name="ItemDesc_BONUSKEY">A reward for conquering the hating monster. Gj lol</Entry>
+  </CATEGORY>
+  <CATEGORY Name="Journal">
+    <Entry Name="Note_EntryCH3_Name">Fear</Entry>
+    <Entry Name="Note_EntryCH3_Text">Your mind is a dangerous place. If I were you, I wouldn't stay long. The demons will drag you down into the abyss of madness[br][br]Time is ticking, Daniel </Entry>
+    <Entry Name="Note_EntryCH3a_Name">Escape</Entry>
+    <Entry Name="Note_EntryCH3a_Text">The monsters hate you. Hmm, that isn't gonna change one bit[br][br]I will leave you with 2 choices:[br][u8226] Either conquer the monster and receive a special bonus award, or;[br][u8226] Search for the key and escape from the monster[br][br]Good luck</Entry>
+    <Entry Name="Note_EntryCH3b_Name">Speed</Entry>
+    <Entry Name="Note_EntryCH3b_Text">You kept telling yourself you were fed up by fleeing. Or was that just a dream?</Entry>
+    <Entry Name="Note_EntryCH3c_Name">Oh really?</Entry>
+    <Entry Name="Note_EntryCH3c_Text">You remember an epic battle between you and the monsters. Did you really win?</Entry>
+    <Entry Name="Note_EntryCH3d_Name">Yeah really!</Entry>
+    <Entry Name="Note_EntryCH3d_Text">It's true you did conquer them, and you will do it again</Entry>
+  </CATEGORY>
+  <CATEGORY Name="Levels">
+    <Entry Name="NextDream">Enter the next dream</Entry>
+  </CATEGORY>
+  <CATEGORY Name="Message">
+    <Entry Name="HintCH3">The escape door is locked. Find the key</Entry>
+    <Entry Name="HintBONUSKEY">The bonus key is on the metal table. Bravo!</Entry>
+  </CATEGORY>
+</LANGUAGE>
