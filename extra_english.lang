@@ -1,7 +1,7 @@
 <LANGUAGE>
   <RESOURCES />
   <CATEGORY Name="CustomStoryMain">
-    <Entry Name="Description">This mod is an enhancement to the original Madness Ch03 Demo mod by cc/machosalad[br][br]Features new maps, enemies, objects, music, bug fixes, grammar correction, and more. A list of new items and enemies can be found in this mod's features.txt file</Entry>
+    <Entry Name="Description">This mod is an enhancement to the original Madness Ch03 Demo mod by cc/machosalad[br][br]Features new maps, enemies, objects, music, bug fixes, grammar correction, and more</Entry>
   </CATEGORY>
   <CATEGORY Name="Inventory">
     <Entry Name="ItemName_CH3key">Your freedom</Entry>
