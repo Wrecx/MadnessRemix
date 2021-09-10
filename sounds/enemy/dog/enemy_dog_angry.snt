@@ -1,0 +1,9 @@
+<SOUNDENTITY>
+  <SOUNDS>
+  	<Main>
+  		<Sound File="grunt/enemy_dog_angry1" />
+  		<Sound File="grunt/enemy_dog_angry2" />
+  		<Sound File="grunt/enemy_dog_angry3" />
+  	</Main>
+  <PROPERTIES Volume="0.9" MinDistance="4" MaxDistance="15" Random="1" Interval="0" FadeEnd="False" FadeStart="False" Stream="False" Loop="False" Use3D="True" Blockable="True" BlockVolumeMul="0.7" Priority="1" />
+</SOUNDENTITY>

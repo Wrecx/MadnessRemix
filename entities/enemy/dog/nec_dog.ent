@@ -1,0 +1,204 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="1.07616 1.68668 3.19081" CameraTarget="-0.331213 0.658678 -0.0885122" CameraZoom="2.6" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/nec_entities/enemies/nec_dog/nec_dog.dae">
+            <SubMesh Active="true" ID="0" Material="" Name="polySurface2" Rotation="0 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0 0" />
+            <SubMesh Active="true" ID="1" Material="" Name="polySurface44" Rotation="0 0 0" Scale="1 1 1" SubMeshID="1" Tag="" WorldPos="0 0 0" />
+            <SubMesh Active="true" ID="2" Material="" Name="polySurface45" Rotation="0 0 0" Scale="1 1 1" SubMeshID="2" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones>
+            <Bone ID="3" Name="polySurface1" />
+            <Bone ID="4" Name="polySurface2" />
+            <Bone ID="5" Name="polySurface44" />
+            <Bone ID="6" Name="polySurface45" />
+            <Bone ID="7" Name="Hips" />
+            <Bone ID="8" Name="Spine" />
+            <Bone ID="9" Name="Spine1" />
+            <Bone ID="10" Name="Spine2" />
+            <Bone ID="11" Name="Spine3" />
+            <Bone ID="12" Name="Neck" />
+            <Bone ID="13" Name="Neck1" />
+            <Bone ID="14" Name="Head" />
+            <Bone ID="15" Name="joint8" />
+            <Bone ID="16" Name="jaw" />
+            <Bone ID="17" Name="jawend" />
+            <Bone ID="18" Name="LeftShoulder" />
+            <Bone ID="19" Name="LeftArm" />
+            <Bone ID="20" Name="LeftForeArm" />
+            <Bone ID="21" Name="LeftHand" />
+            <Bone ID="22" Name="LeftHand_joint13" />
+            <Bone ID="23" Name="RightShoulder" />
+            <Bone ID="24" Name="RightArm" />
+            <Bone ID="25" Name="RightForeArm" />
+            <Bone ID="26" Name="RightHand" />
+            <Bone ID="27" Name="RightHand_joint13" />
+            <Bone ID="28" Name="Tail" />
+            <Bone ID="29" Name="tailend" />
+            <Bone ID="30" Name="LeftUpLeg" />
+            <Bone ID="31" Name="LeftLeg" />
+            <Bone ID="32" Name="LeftFoot" />
+            <Bone ID="33" Name="LeftToeBase" />
+            <Bone ID="34" Name="LeftFootIndex1" />
+            <Bone ID="35" Name="RightUpLeg" />
+            <Bone ID="36" Name="RightLeg" />
+            <Bone ID="37" Name="RightFoot" />
+            <Bone ID="38" Name="RightToeBase" />
+            <Bone ID="39" Name="RightFootIndex1" />
+        </Bones>
+        <Shapes />
+        <Bodies />
+        <Joints />
+        <Animations>
+            <Animation File="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/entities/enemy/dog/dog/Animation/character_dog_run.dae_ANIM" Name="Run" SpecialEventTime="1.22032e-033" Speed="0.9">
+                <Event Time="0.2" Type="PlaySound" Value="enemy_dog_run" />
+                <Event Time="1.2" Type="Step" Value="j" />
+                <Event Time="1.7" Type="PlaySound" Value="enemy_dog_run" />
+            </Animation>
+            <Animation File="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/entities/enemy/dog/dog/Animation/character_dog_walk.dae_ANIM" Name="Walk" SpecialEventTime="1.22032e-033" Speed="1.5">
+                <Event Time="0.2" Type="PlaySound" Value="enemy_dog_step" />
+                <Event Time="1.6" Type="Step" Value="j" />
+                <Event Time="2" Type="PlaySound" Value="enemy_dog_step" />
+            </Animation>
+            <Animation File="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/entities/enemy/dog/dog/Animation/character_dog_breakdoor.dae_ANIM" Name="BreakDoor" SpecialEventTime="4.59948e-031" Speed="1.9">
+                <Event Time="0.5" Type="PlaySound" Value="enemy_dog_break_door" />
+            </Animation>
+            <Animation File="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/entities/enemy/dog/dog/Animation/character_dog_angry.dae_ANIM" Name="Notice1" SpecialEventTime="4.59948e-031" Speed="1">
+                <Event Time="0.1" Type="PlaySound" Value="enemy_dog_investigate.snt" />
+            </Animation>
+            <Animation File="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/entities/enemy/dog/dog/Animation/character_dog_attack01.dae_ANIM" Name="SwingClaws01" SpecialEventTime="0.5" Speed="1.6">
+                <Event Time="0.3" Type="PlaySound" Value="enemy_dog_attack" />
+            </Animation>
+            <Animation File="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/entities/enemy/dog/dog/Animation/character_dog_attack02.dae_ANIM" Name="SwingClaws02" SpecialEventTime="0.55" Speed="1.6">
+                <Event Time="0.4" Type="PlaySound" Value="enemy_dog_attack" />
+            </Animation>
+            <Animation File="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/entities/enemy/dog/dog/Animation/character_dog_attack_low.dae_ANIM" Name="SwingLaunch" SpecialEventTime="0.55" Speed="1.7">
+                <Event Time="0.4" Type="PlaySound" Value="enemy_dog_launch" />
+            </Animation>
+            <Animation File="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/entities/enemy/dog/dog/Animation/character_dog_idle.dae_ANIM" Name="Idle" SpecialEventTime="4.59948e-031" Speed="1" />
+            <Animation File="D:/Games/Steam/steamapps/common/Amnesia The Dark Descent/entities/nec_entities/enemies/nec_dog/Animation/character_dog_howl.dae_ANIM" Name="Notice2" SpecialEventTime="4.59948e-031" Speed="1.2">
+                <Event Time="0.2" Type="PlaySound" Value="enemy_dog_howl.snt" />
+            </Animation>
+            <Animation File="character_dog_breakdoor.dae_ANIM" Name="Flinch" SpecialEventTime="0" Speed="2">
+                <Event Time="0.2" Type="PlaySound" Value="enemy_dog_hurt" />
+            </Animation>
+            <Animation File="character_dog_idle.dae_ANIM" Name="IdleExtra1" SpecialEventTime="0" Speed="1" />
+            <Animation File="character_dog_idle.dae_ANIM" Name="IdleExtra2" SpecialEventTime="4.59948e-031" Speed="1" />
+            <Animation File="character_dog_idle.dae_ANIM" Name="IdleExtra3" SpecialEventTime="4.59948e-031" Speed="1" />
+            <Animation File="D:/Games/Steam/steamapps/common/Amnesia The Dark Descent/entities/nec_dog/Animation/character_dog_breakdoor.dae_ANIM" Name="Dead" SpecialEventTime="1.50657e-032" Speed="2">
+                <Event Time="0.05" Type="PlaySound" Value="enemy_dog_die" />
+            </Animation>
+        </Animations>
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="Enemy_Grunt">
+        <Var Name="Health" Value="70" />
+        <Var Name="Toughness" Value="0" />
+        <Var Name="AutoRemoveAtPathEnd" Value="false" />
+        <Var Name="SightRange" Value="15" />
+        <Var Name="DarknessSightRange" Value="8" />
+        <Var Name="HearVolume" Value="0.4" />
+        <Var Name="FOV" Value="175" />
+        <Var Name="FOVXMul" Value="1" />
+        <Var Name="ActivationDistance" Value="999" />
+        <Var Name="MaxRegenHealth" Value="35" />
+        <Var Name="RegenHealthSpeed" Value="1" />
+        <Var Name="DangerMusic" Value="penumbra_music_E1_D1" />
+        <Var Name="DangerMusicPrio" Value="0.5" />
+        <Var Name="SearchMusic" Value="" />
+        <Var Name="SearchMusicPrio" Value="0.5" />
+        <Var Name="AttackMusic" Value="penumbra_music_E1_F1" />
+        <Var Name="AttackMusicPrio" Value="0.5" />
+        <Var Name="PlayerSearchMaxAngle" Value="35" />
+        <Var Name="PlayerSearchMinDistMul" Value="0.5" />
+        <Var Name="PlayerSearchMaxDistMul" Value="30" />
+        <Var Name="PlayerSearchTime" Value="60" />
+        <Var Name="PlayerPatrolMaxAngle" Value="80" />
+        <Var Name="PlayerPatrolMinDist" Value="8" />
+        <Var Name="PlayerPatrolMaxDist" Value="20" />
+        <Var Name="Body_Size" Value="1 1.1 1" />
+        <Var Name="Body_Mass" Value="50" />
+        <Var Name="Body_AccurateClimbing" Value="true" />
+        <Var Name="Body_MaxNoSlideSlopeAngle" Value="45" />
+        <Var Name="Body_MaxPushMass" Value="50" />
+        <Var Name="Body_PushForce" Value="180" />
+        <Var Name="Body_CharacterMaxPushMass" Value="20" />
+        <Var Name="Body_CharacterPushForce" Value="100" />
+        <Var Name="Body_MaxStepSize" Value="0.5" />
+        <Var Name="Body_StepClimbSpeed" Value="6.0" />
+        <Var Name="Body_OffsetRot" Value="0 180 0" />
+        <Var Name="Body_OffsetTrans" Value="0 0.036 0" />
+        <Var Name="Walk_ForwardSpeed" Value="1.17" />
+        <Var Name="Walk_BackwardSpeed" Value="0.42" />
+        <Var Name="Walk_ForwardAcc" Value="11" />
+        <Var Name="Walk_ForwardDeacc" Value="16" />
+        <Var Name="Run_ForwardSpeed" Value="7" />
+        <Var Name="Run_BackwardSpeed" Value="2.32" />
+        <Var Name="Run_ForwardAcc" Value="5.5" />
+        <Var Name="Run_ForwardDeacc" Value="8" />
+        <Var Name="TurnSpeedMul" Value="6" />
+        <Var Name="TurnMaxSpeed" Value="10" />
+        <Var Name="TurnMinBreakAngle" Value="10" />
+        <Var Name="TurnBreakMul" Value="2" />
+        <Var Name="MoveSpeedAnimMul" Value="0.9" />
+        <Var Name="StoppedToWalkSpeed" Value="0.15" />
+        <Var Name="WalkToStoppedSpeed" Value="0.1" />
+        <Var Name="WalkToRunSpeed" Value="1.3" />
+        <Var Name="RunToWalkSpeed" Value="2.1" />
+        <Var Name="WaterStepSpeedWalk" Value="3.0" />
+        <Var Name="WaterStepSpeedRun" Value="5.0" />
+        <Var Name="WaterStepSpeedMisc" Value="3.0" />
+        <Var Name="HitPS_Sword" Value="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/hit/blood.ps" />
+        <Var Name="HitSound_Sword" Value="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/sounds/enemy/brute/hit_generic.snt" />
+        <Var Name="HitPS_Club" Value="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/hit/blood.ps" />
+        <Var Name="HitSound_Club" Value="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/sounds/enemy/brute/hit_generic.snt" />
+        <Var Name="HitPS_Bullet" Value="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/hit/blood.ps" />
+        <Var Name="HitSound_Bullet" Value="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/sounds/enemy/brute/hit_generic.snt" />
+        <Var Name="HitPS_Dud" Value="" />
+        <Var Name="HitSound_Dud" Value="" />
+        <Var Name="AmbientSound_Idle" Value="enemy_dog_idle" />
+        <Var Name="AmbientMinTime_Idle" Value="2" />
+        <Var Name="AmbientMaxTime_Idle" Value="6" />
+        <Var Name="AmbientSound_Alert" Value="enemy_dog_attention" />
+        <Var Name="AmbientMinTime_Alert" Value="2" />
+        <Var Name="AmbientMaxTime_Alert" Value="5" />
+        <Var Name="AmbientSound_Hunt" Value="enemy_dog_angry" />
+        <Var Name="AmbientMinTime_Hunt" Value="2" />
+        <Var Name="AmbientMaxTime_Hunt" Value="4" />
+        <Var Name="NormalAttackDistance" Value="1.8" />
+        <Var Name="NormalDamageSize" Value="1.28 1.1 1.45" />
+        <Var Name="NormalDamageOffset" Value="0 0 1" />
+        <Var Name="NormalAttackHitSound" Value="enemy_dog_bite" />
+        <Var Name="NormalAttackDamage" Value="25 40" />
+        <Var Name="NormalAttackForce" Value="30 5" />
+        <Var Name="NormalAttackStrength" Value="1" />
+        <Var Name="NormalDamageType" Value="Claws" />
+        <Var Name="BreakDoorAttackDamage" Value="40 60" />
+        <Var Name="BreakDoorAttackForce" Value="30 5" />
+        <Var Name="BreakDoorAttackStrength" Value="3" />
+        <Var Name="BreakDoorAttackHitSound" Value="" />
+        <Var Name="BreakDoorDamageType" Value="BloodSplat" />
+        <Var Name="NoticeSound" Value="" />
+        <Var Name="GiveUpNoticeSound" Value="" />
+        <Var Name="EnabledSound" Value="" />
+        <Var Name="GroggyDamageCount" Value="1" />
+        <Var Name="AlertToHuntDistance" Value="18" />
+        <Var Name="AlertToInstantHuntDistance" Value="12" />
+        <Var Name="HuntPauseMinTime" Value="2" />
+        <Var Name="HuntPauseMaxTime" Value="3" />
+        <Var Name="IncreaseAlertSpeedDistance" Value="3" />
+        <Var Name="IncreasedAlertSpeedMul" Value="1.35" />
+        <Var Name="AlertRunTowardsToHuntLimit" Value="0" />
+        <Var Name="AlertRunTowardsCheckDistance" Value="6" />
+        <Var Name="IdleExtraTimeMin" Value="3" />
+        <Var Name="IdleExtraTimeMax" Value="4" />
+        <Var Name="IdleExtraNum" Value="3" />
+    </UserDefinedVariables>
+</Entity>

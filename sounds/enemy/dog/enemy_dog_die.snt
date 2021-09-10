@@ -1,0 +1,10 @@
+<SOUNDENTITY>
+  <SOUNDS>
+  	<Main>
+  		<Sound File="dog/enemy_dog_die1" />
+  		<Sound File="dog/enemy_dog_die2" />
+  		<Sound File="dog/enemy_dog_die3" />
+  	</Main>
+  </SOUNDS>
+  <PROPERTIES Volume="1" MinDistance="2" MaxDistance="12" Random="1" Interval="0" FadeEnd="False" FadeStart="False" Stream="False" Loop="False" Use3D="True" Blockable="True" BlockVolumeMul="0.7" Priority="1" />
+</SOUNDENTITY>

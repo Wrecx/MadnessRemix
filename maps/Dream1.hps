@@ -1,0 +1,167 @@
+void OnEnter()
+{
+	SetPlayerRunSpeedMul(1.1f);
+
+	CheckPoint("asdf", "PlayerStartArea_1", "CheckPointDIE", "", "");
+
+	AddEntityCollideCallback("Player", "DIE", "FellOffStage", true, 0);
+	AddEntityCollideCallback("Player", "WIN", "WeHaveAWinner", true, 0);
+	AddEntityCollideCallback("Player", "FALL", "FallsDown", true, 0);
+	AddEntityCollideCallback("TheHatch", "TheArea", "AlmostThere", true, 0);
+
+	PlayMusic("Tension.ogg", true, 2.0f, 0, 10, true);
+
+	FadeIn(3.0f);
+
+	AddTimer("Meteor0",  RandFloat(20, 30), "CreateMeteor");
+	AddTimer("Meteor1",  RandFloat(20, 30), "CreateMeteor");
+	AddTimer("Meteor2",  RandFloat(20, 30), "CreateMeteor");
+	AddTimer("Meteor3",  RandFloat(20, 30), "CreateMeteor");
+	AddTimer("Meteor4",  RandFloat(20, 30), "CreateMeteor");
+	AddTimer("Meteor5",  RandFloat(20, 30), "CreateMeteor");
+	AddTimer("Meteor6",  RandFloat(20, 30), "CreateMeteor");
+	AddTimer("Meteor7",  RandFloat(20, 30), "CreateMeteor");
+	AddTimer("Meteor8",  RandFloat(20, 30), "CreateMeteor");
+	AddTimer("Meteor9",  RandFloat(20, 30), "CreateMeteor");
+	AddTimer("Meteor10", RandFloat(20, 30), "CreateMeteor");
+	AddTimer("Meteor11", RandFloat(20, 30), "CreateMeteor");
+	AddTimer("Meteor12", RandFloat(20, 30), "CreateMeteor");
+	AddTimer("Meteor13", RandFloat(20, 30), "CreateMeteor");
+	AddTimer("Meteor14", RandFloat(20, 30), "CreateMeteor");
+	AddTimer("Meteor15", RandFloat(20, 30), "CreateMeteor");
+
+	PreloadSound("general_wind_whirl");
+	PreloadSound("scare_whine_loop4");
+}
+
+void FellOffStage(string &in asParent, string &in asChild, int alState)
+{
+	GivePlayerDamage(500, "ui_elec_damage", true, true);
+}
+
+void WeHaveAWinner(string &in asParent, string &in asChild, int alState)
+{
+	ChangeMap("Dream2.map","PlayerStartArea_1", "", "");
+	FadeOut(0.0f);
+	StopMusic(1.0f, 10);
+}
+
+void AlmostThere(string &in asParent, string &in asChild, int alState)
+{
+	GiveSanityBoostSmall();
+	PlayMusic("amb_guardian.ogg", true, 2.0f, 0, 10, true);
+}
+
+void FallsDown(string &in asParent, string &in asChild, int alState)
+{
+	PlaySoundAtEntity("", "general_wind_whirl.snt", "Player", 1.0f, true);
+}
+
+void CheckPointDIE(string &in asName, int alCount)
+{
+	AddTimer("ChangeMap", 2.0, "TimerChangeMap");
+}
+	
+void TimerChangeMap(string &in asChangeMap)
+{
+	ChangeMap("Dream1Failure.map","PlayerStartArea_1", "", "");
+}
+
+void CreateMeteor(string &in asTimer)
+{
+	if(asTimer == "Meteor0") 
+	{
+		CreateEntityAtArea("Meteor", "contained_awesome.ent", "Area_"+RandInt(1, 100), false);
+		AddTimer("Meteor0", RandFloat(10, 10), "CreateMeteor");
+	}
+
+	else if(asTimer == "Meteor1") 
+	{
+		CreateEntityAtArea("Meteor", "contained_awesome_brute.ent", "Area_"+RandInt(1, 100), false);
+		AddTimer("Meteor1", RandFloat(20, 20), "CreateMeteor");
+	}
+
+	else if(asTimer == "Meteor2")
+	{
+		CreateEntityAtArea("Meteor", "contained_grunt.ent", "Area_"+RandInt(1, 100), false);
+		AddTimer("Meteor2", RandFloat(30, 30), "CreateMeteor");
+	}
+
+	else if(asTimer == "Meteor3") 
+	{
+		CreateEntityAtArea("Meteor", "contained_brute.ent", "Area_"+RandInt(1, 100), false);
+		AddTimer("Meteor3", RandFloat(40, 40), "CreateMeteor");
+	}
+
+	else if(asTimer == "Meteor4") 
+	{
+		CreateEntityAtArea("Meteor", "contained_roach.ent", "Area_"+RandInt(1, 100), false);
+		AddTimer("Meteor4", RandFloat(50, 50), "CreateMeteor");
+	}
+
+	else if(asTimer == "Meteor5") 
+	{
+		CreateEntityAtArea("Meteor", "contained_dog.ent", "Area_"+RandInt(1, 100), false);
+		AddTimer("Meteor5", RandFloat(60, 60), "CreateMeteor");
+	}
+
+	else if(asTimer == "Meteor6") 
+	{
+		CreateEntityAtArea("Meteor", "contained_dog_husky.ent", "Area_"+RandInt(1, 100), false);
+		AddTimer("Meteor6", RandFloat(70, 70), "CreateMeteor");
+	}
+
+	else if(asTimer == "Meteor7") 
+	{
+		CreateEntityAtArea("Meteor", "contained_hunter.ent", "Area_"+RandInt(1, 100), false);
+		AddTimer("Meteor7", RandFloat(80, 80), "CreateMeteor");
+	}
+
+	else if(asTimer == "Meteor8") 
+	{
+		CreateEntityAtArea("Meteor", "contained_infected.ent", "Area_"+RandInt(1, 100), false);
+		AddTimer("Meteor8", RandFloat(90, 90), "CreateMeteor");
+	}
+
+	else if(asTimer == "Meteor9") 
+	{
+		CreateEntityAtArea("Meteor", "contained_infected_axe.ent", "Area_"+RandInt(1, 100), false);
+		AddTimer("Meteor9", RandFloat(100, 100), "CreateMeteor");
+	}
+
+	else if(asTimer == "Meteor10") 
+	{
+		CreateEntityAtArea("Meteor", "contained_infected_crowbar.ent", "Area_"+RandInt(1, 100), false);
+		AddTimer("Meteor10", RandFloat(110, 110), "CreateMeteor");
+	}
+
+	else if(asTimer == "Meteor11") 
+	{
+		CreateEntityAtArea("Meteor", "contained_infected_mine.ent", "Area_"+RandInt(1, 100), false);
+		AddTimer("Meteor11", RandFloat(120, 120), "CreateMeteor");
+	}
+
+	else if(asTimer == "Meteor12") 
+	{
+		CreateEntityAtArea("Meteor", "contained_infected_red.ent", "Area_"+RandInt(1, 100), false);
+		AddTimer("Meteor12", RandFloat(130, 130), "CreateMeteor");
+	}
+
+	else if(asTimer == "Meteor13") 
+	{
+		CreateEntityAtArea("Meteor", "contained_skinny.ent", "Area_"+RandInt(1, 100), false);
+		AddTimer("Meteor13", RandFloat(140, 140), "CreateMeteor");
+	}
+
+	else if(asTimer == "Meteor14") 
+	{
+		CreateEntityAtArea("Meteor", "contained_chubby.ent", "Area_"+RandInt(1, 100), false);
+		AddTimer("Meteor14", RandFloat(150, 150), "CreateMeteor");
+	}
+
+	else if(asTimer == "Meteor15") 
+	{
+		CreateEntityAtArea("Meteor", "contained_buffy.ent", "Area_"+RandInt(1, 100), false);
+		AddTimer("Meteor15", RandFloat(160, 160), "CreateMeteor");
+	}
+} 
