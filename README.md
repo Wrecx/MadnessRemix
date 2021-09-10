@@ -6,4 +6,5 @@
 3. Drag the `MadnessRemix-master` folder into `custom_stories`
 
 # Credits
-• CounterCurrent Games (Necrologue assets)
+• Thomas Grip + Frictional Games + CounterCurrent Games (Penumbra: Necrologue assets)
+• Red Line Games + NiksonX (High Quality Monster Pack)
